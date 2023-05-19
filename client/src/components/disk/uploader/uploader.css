@@ -1,0 +1,59 @@
+.uploader {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  background: darkgrey;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+.uploader__header {
+  display: flex;
+  justify-content: space-between;
+}
+.uploader__title {
+  color: darkred;
+  font-size: 1.2em;
+}
+.uploader__close {
+  padding: 3px;
+  font-size: 20px;
+  color: white;
+  background: darkred;
+}
+
+.upload-file {
+  border-radius: 10px;
+  margin: 5px 0;
+  padding: 5px 10px;
+}
+.upload-file__header {
+  display: flex;
+  justify-content: space-between;
+}
+.upload-file__progress-bar {
+  height: 1em;
+  border-radius: 10px;
+  display: flex;
+  margin: 3px 0;
+  color: orange;
+  background-color: darkred;
+}
+.upload-file__upload-bar {
+  background-color: darkgreen;
+  border-radius: 10px;
+}
+.upload-file__percent {
+  left: 50%;
+  position: absolute;
+}
+.upload-file__remove {
+  padding: 3px;
+  font-size: 15px;
+  color: white;
+  background: darkred;
+}
+
+/*# sourceMappingURL=uploader.css.map */

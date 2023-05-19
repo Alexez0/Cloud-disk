@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*--------------------*/
+/*575, 767, 991, 1199, 1140*/
+
+.file{
+  margin: 10px 0;
+  border-bottom: 2px solid darkred;
+  display: grid;
+  grid-template-columns: 1fr 4fr repeat(4, 1fr);
+  align-items: center;
+  .file-size{
+    grid-column-start: 6;
+    justify-self: center;
+  }
+  .file-date{
+    grid-column-start: 5;
+    justify-self: center;
+  }
+  .file-img{
+    justify-self: center;
+  }
+  .file-btn{
+    display: none;
+  }
+}
+.file:hover{
+  transform: scale(1.02);
+  .file-date{
+    grid-column-start: 3;
+  }
+  .file-size{
+    grid-column-start: 4;
+  }
+  .file-download{
+    grid-column-start: 5;
+    display: block;
+    font-size: 20px;
+    margin-right: 20px;
+    background: transparent;
+    color:darkred;
+    border: 2px dashed darkred;
+
+  }
+  .file-delete{
+    grid-column-start: 6;
+    display: block;
+    font-size: 20px;
+    background: transparent;
+    color:darkred;
+    border: 2px dashed darkred;
+  }
+}
